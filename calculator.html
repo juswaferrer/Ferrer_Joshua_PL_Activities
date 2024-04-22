@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferrer/Joshua_C./Calculator</title>
+    <link rel="stylesheet" href="calculator.css" type="text/css">
+    <link rel="icon" type="x-icon" href="calculator.png">
+</head>
+
+<body>
+    
+    <form action="" class="calculator" name="calc">
+        <input type="text" name="txt" class="calcScreen">
+        
+        <button class="modulo" type="button" onclick="appendText('%');">%</button>
+        <button class="AC" type="button" onclick="clearAll();">AC</button>
+        <button class="clear" type="button" onclick="deleteLast();">C</button>
+        <button class="DEL" type="button" onclick="deleteLast();">DEL</button>
+
+        <button class="square" type="button" onclick="calculateSquare();">x2</button>
+        <button class="squareroot" type="button" onclick="calculateSquareRoot();">√</button>
+        <button class="shift" type="button" onclick="changeSign();">+/-</button>
+        <button class="operations" type="button" onclick="appendText('/');">/</button>
+
+        <button type="button" onclick="appendText('7');">7</button>
+        <button type="button" onclick="appendText('8');">8</button>
+        <button type="button" onclick="appendText('9');">9</button>
+        <button class="operations" type="button" onclick="appendText('*');">*</button>
+
+        <button type="button" onclick="appendText('4');">4</button>
+        <button type="button" onclick="appendText('5');">5</button>
+        <button type="button" onclick="appendText('6');">6</button>
+        <button class="operations" type="button" onclick="appendText('-');">-</button>
+
+        <button type="button" onclick="appendText('1');">1</button>
+        <button type="button" onclick="appendText('2');">2</button>
+        <button type="button" onclick="appendText('3');">3</button>
+        <button class="operations plus" type="button" onclick="appendText('+');">+</button>
+        
+        <button type="button" onclick="appendText('00');">00</button>
+        <button type="button" onclick="appendText('0');">0</button>
+        <button type="button" onclick="appendText('.');">.</button>
+
+        <button class="equal" type="button" onclick="computeAndStore();">=</button>
+    </form>
+
+    <div id="history">
+        <h3>History</h3>
+    </div>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+          <a href="calculator.html">Calculator</a>
+          <a href="colorcheck.html">Color Contrast Checker</a>
+          <a href="flagguess.html">Flag Guessing Game</a>
+    </div>
+
+    <script type="text/javascript" src="calculator.js"></script>
+</body>
+
+</html>

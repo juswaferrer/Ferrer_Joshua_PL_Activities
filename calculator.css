@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.calcScreen {
+  border-width: thick;
+  background-color: #333;
+  color: #eee;
+  height: 98px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100px;
+  padding-right: 100px;
+  border-radius: 0.8em;
+}
+
+.form {
+  width: 300px;
+  height: 500px;
+}
+.calculator-container{
+  background-color: #000;
+  align-self: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('calculatorBg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#h1 {
+  text-align: center;
+}
+
+.calculator {
+  width: 240px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3px;
+  background-color: #000;
+  border-radius: 0.8em;
+}
+
+.calculator button {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  background: #fff;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 500;
+  border-radius: 0.8em;
+}
+
+.calculator .operations,
+.calculator .modulo,
+.calculator .AC,
+.calculator .DEL,
+.calculator .square,
+.calculator .squareroot,
+.calculator .shift,
+.calculator .clear,
+.calculator .equal {
+  background: #393e46;
+  color: #fff;
+}
+
+.calculator .calcScreen {
+  grid-column: span 4;
+  padding: 20px 10px;
+  outline: none;
+  border: none;
+  font-size: 1.3em;
+  text-align: end;
+}
+
+
+#history {
+  width: 240px;
+  height: 473px;
+  overflow-y: scroll;
+  font-size: 1.1em;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 10px 20px;
+  border-radius: 0.8em;
+}
+
+#history::-webkit-scrollbar {
+  width: 5px;
+}
+
+#history::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+#history h3 {
+  padding: 10px 0px;
+  font-size: 1.2em;
+  color: #000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#history p:last-child {
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.dropdown {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-repeat: no-repeat;
+}
+
+.dropbtn {
+  background-color: #FCA311;
+  border-radius: 4px;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
